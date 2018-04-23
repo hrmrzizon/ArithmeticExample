@@ -1,3 +1,1 @@
-## Coroutine Example for KGSH Education
-
-This include CustomCoroutineExecutor
+## Arithmetic Example for KGSH Education
