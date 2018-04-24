@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 2140116966}
-  position: {x: 3, y: 0, z: 0}
+  position: {x: 0, y: 0, z: 0}
   translate: {x: 0, y: 0, z: 0}
   scale: {x: 0, y: 0, z: 0}
   selectEulerAngle: 1
@@ -469,7 +469,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2140116961}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 642771066}

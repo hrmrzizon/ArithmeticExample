@@ -12,6 +12,9 @@
         public Vector3 position1;
         public Vector3 position2;
 
+        public Transform target1;
+        public Transform target2;
+
         [Range(0, 1)]
         public float t;
 
@@ -43,6 +46,9 @@
             {
                 transform.position = SphericalLinearInterpolation(position1, position2, t);
             }
+
+            target1.position = position1;
+            target2.position = position2;
         }
 
         private void Update()

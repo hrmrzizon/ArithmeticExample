@@ -9,26 +9,19 @@
     public class TransformationMake : MonoBehaviour
     {
         public Transform target;
-
         public Vector3 position;
+
+        [Header("Transformation Inform")][Space]
 
         public Vector3 translate;        
         public Vector3 scale;
+
+        [Header("Rotation Inform")][Space]
 
         public bool selectEulerAngle;
         public Vector3 eulerAngle;
         public float angle;
         public Vector3 direction;
-
-        Quaternion ToQuaternion(Vector3 eulerAngle)
-        {
-            return new Quaternion();
-        }
-
-        Vector3 ToEuler(Quaternion quaternion)
-        {
-            return new Vector3();
-        }
 
         void ApplyMatrix()
         {
@@ -48,8 +41,6 @@
                     Mathf.Floor(Mathf.Abs(eulerAngle.y / 180f)) * -Mathf.Sign(eulerAngle.y) * 360f, 
                     Mathf.Floor(Mathf.Abs(eulerAngle.z / 180f)) * -Mathf.Sign(eulerAngle.z) * 360f
                     );
-
-                Debug.Log(eulerAngle);
 
                 MatrixUtility.SetTERS(out matrix, translate, eulerAngle, scale);
             }
