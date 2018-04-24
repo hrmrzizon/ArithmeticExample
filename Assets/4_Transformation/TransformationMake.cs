@@ -39,7 +39,7 @@
                 angle = angle + Mathf.Floor(Mathf.Abs(angle / 180f)) * -Mathf.Sign(angle) * 360f;
                 direction.Normalize();
 
-                MatrixUtility.SetTQRS(ref matrix, translate, QuaternionAsAxisAngle.AngleAxis(angle, direction, false), scale);
+                MatrixUtility.SetTQRS(out matrix, translate, QuaternionAsAxisAngle.AngleAxis(angle, direction, false), scale);
             }
             else
             {
@@ -51,7 +51,7 @@
 
                 Debug.Log(eulerAngle);
 
-                MatrixUtility.SetTERS(ref matrix, translate, eulerAngle, scale);
+                MatrixUtility.SetTERS(out matrix, translate, eulerAngle, scale);
             }
 
             target.position = matrix.ApplyPosition(position);
