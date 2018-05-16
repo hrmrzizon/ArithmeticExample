@@ -39,9 +39,9 @@
                 Debug.LogFormat("DOT: {0}ㆍ{1} = {2}", forward, direction, Dot(forward, direction));
 
             if (!productDirectly)
-                Debug.LogFormat("CROSS: {0}ㆍ{1} = {2}, Size : {3}", transform.forward, direction, Vector3.Cross(transform.forward, direction), Vector3.Cross(transform.forward, direction).sqrMagnitude);
+                Debug.LogFormat("CROSS: {0}ㆍ{1} = {2}, Size : {3}", transform.forward, direction, Vector3.Cross(transform.forward, direction), Vector3.Cross(transform.forward, direction).magnitude);
             else
-                Debug.LogFormat("CROSS: {0}ㆍ{1} = {2}, Size : {3}", transform.forward, direction, Cross(transform.forward, direction), Cross(transform.forward, direction).sqrMagnitude);
+                Debug.LogFormat("CROSS: {0}ㆍ{1} = {2}, Size : {3}", transform.forward, direction, Cross(transform.forward, direction), Cross(transform.forward, direction).magnitude);
         }
     }
 }
